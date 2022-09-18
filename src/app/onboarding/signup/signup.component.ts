@@ -95,7 +95,8 @@ export class SignupComponent implements OnInit {
       html: `<h1>Email Confirmation</h1>
       <h2>Hello ${user.email}</h2>
       <p>Thank you for subscribing. Please confirm your email by clicking on the following link</p>
-      <a href=http://localhost:4200/#/emailactivation/${user.confirmationCode}> Click here</a>
+      // <a href=http://localhost:4200/#/emailactivation/${user.confirmationCode}> Click here</a>
+      <a href=https://linkcookie-test.netlify.app//#/emailactivation/${user.confirmationCode}> Click here</a>
       </div>`
     }
     this.mailService.sendEmail(email)

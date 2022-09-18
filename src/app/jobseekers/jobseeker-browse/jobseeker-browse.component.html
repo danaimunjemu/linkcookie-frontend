@@ -1,0 +1,103 @@
+<div class="row">
+    <div class="col-md-6">
+      <a (click)="showModal()">
+        <div class="dash-card ribbon-container" >
+          <div class="ribbon-live"><span>Live</span></div>
+          <div class="row">
+              <img src="./../../../../../assets/images/banner-see.png" alt="" class="img-fluid">
+              <div class="spacer-sm"></div>
+                <div class="col-md-2">
+                    <div class="d-flex justify-content-center">
+                        <img src="../../../../../assets/images/avatar.png" class="img-fluid dash-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h5 class="adTitle">
+                        Software Developer
+                        <nz-tag class="full-time-tag">Full Time</nz-tag>
+                      </h5>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end job-location">
+                      <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="job-location-svg" viewBox="-4 -2 24 24" width="24" fill="currentColor"><path d="M2 1h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H2v7a1 1 0 0 1-2 0V1a1 1 0 1 1 2 0zm0 9h12V3H2v7z"></path></svg>
+                        Cambodia
+                      </p>
+                    </div>
+                  </div>
+                  <p>
+                    We are looking for a C++ developer to build high performance software for electronic trading.</p>
+            <span> <nz-tag class="skills-tag">Programming</nz-tag></span>
+            <span> <nz-tag class="skills-tag">Data Science</nz-tag></span>
+            <span> <nz-tag class="skills-tag">JavaScript</nz-tag></span>
+              <div class="spacer-sm"></div>
+            <p class="due-date"> 
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -3 24 24" width="24" fill="currentColor"><path d="M18 7V5a1 1 0 0 0-1-1h-1v1a1 1 0 0 1-2 0V4H6v1a1 1 0 1 1-2 0V4H3a1 1 0 0 0-1 1v2h16zm0 2H2v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9zm-2-7h1a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h1V1a1 1 0 1 1 2 0v1h8V1a1 1 0 0 1 2 0v1z"></path></svg>
+              Due Date: 30 November 2022
+            </p>
+            <!-- <div class="d-flex justify-content-end">
+              <button (click)="viewApplicants(advert._id)" [routerLink]="['applicants', advert._id]" class="btn link-primary responsive-click">View Applicants</button>
+            </div> -->
+            
+            
+                </div>
+            </div>
+        </div>
+      </a>
+        
+      <div class="spacer-sm"></div>
+  </div>
+  </div>
+
+
+  <nz-modal [(nzVisible)]="isVisible" nzTitle="" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" class="advert-modal">
+    <ng-container *nzModalContent>
+      <div class="row">
+        <img src="./../../../../../assets/images/banner-see.png" alt="" class="img-fluid">
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="adjusted-up">
+            <div class="dash-card">
+              <h3 class="openedAdTitle"> 
+                Software Developer
+                <nz-tag class="full-time-tag">Full Time</nz-tag>
+              </h3>
+              <p class="dateUploaded">Uploaded: 31 May 2022</p>
+                    
+                      <svg xmlns="http://www.w3.org/2000/svg" class="job-location-svg" viewBox="-4 -2 24 24" width="24" fill="currentColor"><path d="M2 1h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H2v7a1 1 0 0 1-2 0V1a1 1 0 1 1 2 0zm0 9h12V3H2v7z"></path></svg>
+                      Cambodia
+                    
+                    <p class="due-date"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -3 24 24" width="24" fill="currentColor"><path d="M18 7V5a1 1 0 0 0-1-1h-1v1a1 1 0 0 1-2 0V4H6v1a1 1 0 1 1-2 0V4H3a1 1 0 0 0-1 1v2h16zm0 2H2v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9zm-2-7h1a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h1V1a1 1 0 1 1 2 0v1h8V1a1 1 0 0 1 2 0v1z"></path></svg>
+                      Due Date: 30 November 2022
+                    </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-8">
+          <div class="spacer-sm"></div>
+          <p>
+            We are looking for a C++ developer to build high performance software for electronic trading. This is an outstanding opportunity to join a reputable firm in the market, working hand in hand with traders building low latency execution algo's all whilst working remotely.</p>
+          <div class="spacer-sm"></div>
+
+          <h3>Job Description</h3>
+                  <ul >
+                    <li>BSc/MSc/PhD in Computer Science or related field</li>
+                    <li>C/C++ knowledge, minimum 2 years</li>
+                    <li>Understanding of architecture, network fundamentals & experience/keenness to get involved with system-level programmes
+                    </li>
+                  </ul>
+                  <div class="spacer-sm"></div>
+                  <span> <nz-tag class="skills-tag">Programming</nz-tag></span>
+                  <span> <nz-tag class="skills-tag">Data Science</nz-tag></span>
+                  <span> <nz-tag class="skills-tag">JavaScript</nz-tag></span>
+        </div>
+      </div>
+     
+      
+                  
+    </ng-container>
+  </nz-modal>

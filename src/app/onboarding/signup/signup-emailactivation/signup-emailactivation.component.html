@@ -1,0 +1,27 @@
+<div class="onboarding-container d-flex justify-content-center">
+    <div class="d-flex align-items-center">
+        <div class="onboarding-card" >
+            <div class="row" style="min-height:calc(100vh - 100px)">
+                <div class="d-flex justify-content-center align-items-center" *ngIf="emailActivation==true" style="text-align: center;">
+                    <div>
+                        <img src="../../../../assets/images/email-confirmed.svg"  style="max-width: 300px;" alt="">
+                        <h4 class="mt-5">Email Activated!</h4>
+                        <p>You can now log in.</p>
+                        <button nz-button class="primary-button responsive-button" routerLink="../../login">Login To Your Account</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" *ngIf="emailActivation==false" style="text-align: center;">
+                    <div>
+                        <img src="../../../../assets/images/email-failed.svg"  style="max-width: 300px;" alt="">
+                        <h4 class="mt-5">Email Activation Failed!</h4>
+                        <p>We failed to activate your email</p>
+                        <button nz-button class="primary-button responsive-button" routerLink="../signup">Create An Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,52 @@
+<div class="onboarding-container d-flex justify-content-center">
+    <div class="d-flex align-items-center">
+        <div class="onboarding-card">
+            <div class="row">
+                <div class="col-md-7 d-flex align-items-center justify-content-center" style="padding: 50px;">
+                    <div>
+                        <div style="text-align: center;">
+                            <img src="../../../assets/images/linkcookie-logo.png" alt="" style="max-width: 130px;">
+        
+                                <h5 class="onboarding-header mt-3">Welcome to LinkCookie</h5>
+                            </div>
+                            <nz-steps [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+                                <nz-step nzTitle="Account Type" (click)="selectSignUp(0)"></nz-step>
+                                <nz-step nzTitle="Account Information" (click)="selectSignUp(1)"></nz-step>
+                              </nz-steps>
+                            <div class="row">
+                            <p style="text-align: center;">I am a <span style="color: #ffa104; font-weight: 500;">{{user.userType}}</span></p>
+        
+                                <div [hidden]="signup1">
+                                    <app-signup1 (userTypeSelected)="onUserTypeSelected($event)"></app-signup1>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <button nz-button class="primary-button responsive-button" [disabled]="disable" (click)="selectSignUp(1)">Next</button>
+                                    </div>
+                                </div>
+                                <div [hidden]="signup2">
+                                    <app-signup2 (userInfoSubmitted)="onUserInfoSubmitted($event)"></app-signup2>
+                                </div>
+                                <div class="mt-3" style="padding: 0px 150px;">
+                                    <hr>
+                                </div>
+                                <div class="mt-3">
+                                    <p style="text-align: center;">Already have an account? <a routerLink="../login">Log In</a></p>
+                                    <p style="text-align: center;"> <a routerLink="../">Go Back</a></p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-5" style="background-color: #fff7ee;min-height: calc(100vh - 100px); border-radius: 0px 30px 30px 0px;">
+                    <div style="padding: 50px;">
+                        <div class=" d-flex align-items-center justify-content-center"  style="min-height: calc(100vh - 250px);">
+                            <img src="../../../assets/images/signup.svg" style="max-width: 300px;" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

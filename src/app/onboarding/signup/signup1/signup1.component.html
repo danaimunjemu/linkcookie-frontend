@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="d-flex justify-content-center">
+  </div>
+    <div class="col-md-6" style="padding: 0px 50px;">
+        <nz-card [nzCover]="jobSeekerCover" (click)="onSelectJobSeeker()">
+            <nz-card-meta
+              nzTitle="Job Seeker"
+              nzDescription="Seeking work"
+            ></nz-card-meta>
+          </nz-card>
+          <ng-template #jobSeekerCover>
+            <div class="d-flex justify-content-center">
+              <img alt="example" class="card-image" src="../../../../assets/images/jobseeker.svg" />
+            </div>
+          </ng-template>
+    </div>
+
+    <div class="col-md-6" style="padding: 0px 50px;">
+        <nz-card [nzCover]="recruiterCover" (click)="onSelectRecruiter()">
+            <nz-card-meta
+              nzTitle="Recruiters"
+              nzDescription="Looking to hire"
+            ></nz-card-meta>
+          </nz-card>
+          <ng-template #recruiterCover>
+            <div class="d-flex justify-content-center">
+              <img alt="example" class="card-image" src="../../../../assets/images/recruiter.svg" />
+            </div>
+          </ng-template>
+    </div>
+
+
+</div>
+
+
+
+
+
+
